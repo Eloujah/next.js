@@ -57,11 +57,11 @@ export function getNextPathnameInfo(pathname: string, options: Options) {
 
   if (
     options.parseData === true &&
-    info.pathname.startsWith('/_next/data/') &&
+    info.pathname.includes('/_next/data/') &&
     info.pathname.endsWith('.json')
   ) {
     const paths = info.pathname
-      .replace(/^\/_next\/data\//, '')
+      .replace(/^.*\/_next\/data\//, '')
       .replace(/\.json$/, '')
       .split('/')
 
