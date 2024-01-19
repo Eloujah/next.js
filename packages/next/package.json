@@ -1,5 +1,5 @@
 {
-  "name": "next",
+  "name": "@ereadrone/next",
   "version": "13.2.4",
   "description": "The React Framework",
   "main": "./dist/server/next.js",
